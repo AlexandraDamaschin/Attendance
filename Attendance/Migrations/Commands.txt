@@ -1,0 +1,7 @@
+﻿﻿--------------------------------------------------------------------------------------------------------------------------------
+First 
+enable migrations for a certain context in a certain folder
+Enable-Migrations -ContextTypeName Attendance.Models.ApplicationDbContext
+Enable-Migrations -ContextTypeName Attendance.Models.AttendanceContext -MigrationsDirectory Migrations/AttendanceMigrations
+
+--------------------------------------------------------------------------------------------------------------------------------
