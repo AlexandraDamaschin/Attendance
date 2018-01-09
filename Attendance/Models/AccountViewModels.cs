@@ -109,4 +109,5 @@ namespace Attendance.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
+    //asa
 }
