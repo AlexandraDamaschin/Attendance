@@ -17,5 +17,7 @@ namespace Attendance.Models
 
         [Display(Name = "Module Name")]
         public string ModuleName { get; set; }
+
+        public virtual ICollection<Attendance> attendanceModule { get; set; }
     }
 }

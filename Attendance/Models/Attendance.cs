@@ -15,10 +15,20 @@ namespace Attendance.Models
         [Display(Name = "Attendance Id")]
         public int AttendanceId { get; set; }
 
+        [ForeignKey("associatedModule")]
+        public int ModuleId { get; set; }
+
+        [ForeignKey("associatedStudent")]
+        public int CollegeId { get; set; }
+
         [Display(Name = "Attendance Date Time")]
         public DateTime AttendanceDateTime { get; set; }
 
         [Display(Name = "Present")]
         public Boolean Present { get; set; }
+
+        public virtual Module associatedModule { get; set; }
+
+        public virtual Student associatedStudent { get; set; }
     }
 }

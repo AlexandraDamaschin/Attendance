@@ -20,6 +20,7 @@ namespace Attendance.Models
 
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
-        
+
+        public virtual ICollection<Attendance> attendanceStudent { get; set; }
     }
 }
