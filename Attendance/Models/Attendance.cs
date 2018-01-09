@@ -19,7 +19,7 @@ namespace Attendance.Models
         public int ModuleId { get; set; }
 
         [ForeignKey("associatedStudent")]
-        public int CollegeId { get; set; }
+        public String CollegeId { get; set; }
 
         [Display(Name = "Attendance Date Time")]
         public DateTime AttendanceDateTime { get; set; }

@@ -195,6 +195,15 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Migrations\AttendanceMigrations\201801091703330_InitialMigrationAttendanceContext.cs" />
+    <Compile Include="Migrations\AttendanceMigrations\201801091703330_InitialMigrationAttendanceContext.Designer.cs">
+      <DependentUpon>201801091703330_InitialMigrationAttendanceContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801091700416_InitialMigrationAppContext.cs" />
+    <Compile Include="Migrations\201801091700416_InitialMigrationAppContext.Designer.cs">
+      <DependentUpon>201801091700416_InitialMigrationAppContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\AttendanceMigrations\Configuration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -284,6 +293,14 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\AttendanceMigrations\201801091703330_InitialMigrationAttendanceContext.resx">
+      <DependentUpon>201801091703330_InitialMigrationAttendanceContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801091700416_InitialMigrationAppContext.resx">
+      <DependentUpon>201801091700416_InitialMigrationAppContext.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -5,3 +5,15 @@ Enable-Migrations -ContextTypeName Attendance.Models.ApplicationDbContext
 Enable-Migrations -ContextTypeName Attendance.Models.AttendanceContext -MigrationsDirectory Migrations/AttendanceMigrations
 
 --------------------------------------------------------------------------------------------------------------------------------
+Second 
+Add migrations and update database
+
+for the main migration
+add-Migration -ConfigurationTypeName Attendance.Migrations.Configuration
+update-database -ConfigurationTypeName Attendance.Migrations.Configuration
+
+for a certain migration
+add-Migration -ConfigurationTypeName Attendance.Migrations.AttendanceMigrations.Configuration
+update-database -ConfigurationTypeName Attendance.Migrations.AttendanceMigrations.Configuration
+
+--------------------------------------------------------------------------------------------------------------------------------
