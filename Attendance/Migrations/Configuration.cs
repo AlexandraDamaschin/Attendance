@@ -58,20 +58,20 @@ namespace Attendance.Migrations
             context.SaveChanges();
 
             //asign roles to users
-            ApplicationUser librarian = manager.FindByEmail("einstein.albert@itsligo.ie");
-            if (librarian != null)
+            ApplicationUser admin = manager.FindByEmail("einstein.albert@itsligo.ie");
+            if (admin != null)
             {
-                manager.AddToRoles(librarian.Id, new string[] { "Admin" });
+                manager.AddToRoles(admin.Id, new string[] { "Admin" });
             }
             else
             {
                 throw new Exception { Source = "Did not find user" };
             }
 
-            ApplicationUser member = manager.FindByEmail("blogs.joe@itsligo.ie");
-            if (member != null)
+            ApplicationUser student = manager.FindByEmail("blogs.joe@itsligo.ie");
+            if (student != null)
             {
-                manager.AddToRoles(member.Id, new string[] { "Student" });
+                manager.AddToRoles(student.Id, new string[] { "Student" });
             }
             else
             {
