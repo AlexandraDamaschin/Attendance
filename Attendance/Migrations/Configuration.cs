@@ -26,6 +26,10 @@ namespace Attendance.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+         
         }
+
+             
     }
 }

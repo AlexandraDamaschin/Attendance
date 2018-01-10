@@ -15,5 +15,4 @@ update-database -ConfigurationTypeName Attendance.Migrations.Configuration
 for a certain migration
 add-Migration -ConfigurationTypeName Attendance.Migrations.AttendanceMigrations.Configuration
 update-database -ConfigurationTypeName Attendance.Migrations.AttendanceMigrations.Configuration
-
 --------------------------------------------------------------------------------------------------------------------------------
