@@ -13,7 +13,7 @@ namespace Attendance.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Display(Name = "College Id")]
-        public String CollegeId { get; set; }
+        public string CollegeId { get; set; }
 
         [Display(Name = "First Name")]
         public string FirstName { get; set; }

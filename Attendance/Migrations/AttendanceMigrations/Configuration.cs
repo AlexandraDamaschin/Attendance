@@ -30,26 +30,27 @@ namespace Attendance.Migrations.AttendanceMigrations
             //
 
             // SeedStudents(context);
-            SeedModules(context);
+           // SeedModules(context);
         }
+
         //seeding students
         private void SeedStudents(AttendanceContext context)
           {
-                context.Students.AddOrUpdate(u => u.CollegeId, new Student
+                context.Students.AddOrUpdate(u => u.FirstName, new Student
               {
                   CollegeId = "S00000001",
                   FirstName = "John",
                   LastName = "Tooth"
               });
 
-            context.Students.AddOrUpdate(u => u.CollegeId, new Student
+            context.Students.AddOrUpdate(u => u.FirstName, new Student
             {
                 CollegeId = "S00000002",
                 FirstName = "Mary",
                 LastName = "Lee"
             });
 
-            context.Students.AddOrUpdate(u => u.CollegeId, new Student
+            context.Students.AddOrUpdate(u => u.FirstName, new Student
             {
                 CollegeId = "S00000003",
                 FirstName = "Christopher",
