@@ -30,7 +30,8 @@ namespace Attendance.Migrations.AttendanceMigrations
             //
 
             // SeedStudents(context);
-           // SeedModules(context);
+            // SeedModules(context);
+            //SeedAttendance(context);
         }
 
         //seeding students
@@ -80,5 +81,34 @@ namespace Attendance.Migrations.AttendanceMigrations
             });
         }
 
+        private void SeedAttendance(AttendanceContext context)
+        {
+            context.Attendances.AddOrUpdate(u => u.AttendanceId, new Attendance
+            {
+                AttendanceId = 1,
+                ModuleId = 1,
+                CollegeId= "S00000001",
+                AttendanceDateTime=DateTime.Now,
+                Present=true
+            });
+
+            context.Attendances.AddOrUpdate(u => u.AttendanceId, new Attendance
+            {
+                AttendanceId = 1,
+                ModuleId = 2,
+                CollegeId = "S00000001",
+                AttendanceDateTime = DateTime.Now,
+                Present = false
+            });
+
+            context.Attendances.AddOrUpdate(u => u.AttendanceId, new Attendance
+            {
+                AttendanceId = 1,
+                ModuleId = 3,
+                CollegeId = "S00000001",
+                AttendanceDateTime = DateTime.Now,
+                Present = true
+            });
+        }
     }
 }
