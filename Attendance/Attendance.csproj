@@ -195,8 +195,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="AttendanceMigrations\201801101105065_changeCollegeIdType.cs" />
-    <Compile Include="AttendanceMigrations\201801101105065_changeCollegeIdType.Designer.cs">
+    <Compile Include="Controllers\AttendancesController.cs" />
+    <Compile Include="Controllers\ModulesController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Migrations\AttendanceMigrations\201801101105065_changeCollegeIdType.cs" />
+    <Compile Include="Migrations\AttendanceMigrations\201801101105065_changeCollegeIdType.Designer.cs">
       <DependentUpon>201801101105065_changeCollegeIdType.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AttendanceMigrations\201801091703330_InitialMigrationAttendanceContext.cs" />
@@ -286,6 +289,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Modules\Create.cshtml" />
+    <Content Include="Views\Modules\Delete.cshtml" />
+    <Content Include="Views\Modules\Details.cshtml" />
+    <Content Include="Views\Modules\Edit.cshtml" />
+    <Content Include="Views\Modules\Index.cshtml" />
+    <Content Include="Views\Attendances\Create.cshtml" />
+    <Content Include="Views\Attendances\Delete.cshtml" />
+    <Content Include="Views\Attendances\Details.cshtml" />
+    <Content Include="Views\Attendances\Edit.cshtml" />
+    <Content Include="Views\Attendances\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -299,7 +317,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AttendanceMigrations\201801101105065_changeCollegeIdType.resx">
+    <EmbeddedResource Include="Migrations\AttendanceMigrations\201801101105065_changeCollegeIdType.resx">
       <DependentUpon>201801101105065_changeCollegeIdType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\AttendanceMigrations\201801091703330_InitialMigrationAttendanceContext.resx">

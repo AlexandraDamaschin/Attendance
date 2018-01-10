@@ -1,0 +1,50 @@
+﻿@model Attendance.Models.Attendance
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Attendance</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.associatedModule.ModuleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.associatedModule.ModuleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.associatedStudent.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.associatedStudent.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AttendanceDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AttendanceDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Present)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Present)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AttendanceId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
